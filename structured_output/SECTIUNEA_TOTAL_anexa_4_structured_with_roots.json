@@ -1,4 +1,12 @@
 {
+  "00.00": {
+    "name": "ALL ROOT ELEMENTS",
+    "subCategories": [
+      "00.01",
+      "01",
+      "96.02C"
+    ]
+  },
   "00.01": {
     "value": 1664090.0,
     "name": "TOTAL VENITURI",
@@ -107,13 +115,5 @@
     "value": 0.0,
     "name": "DEFICIT",
     "subCategories": []
-  },
-  "00.00": {
-    "name": "ALL ROOT ELEMENTS",
-    "subCategories": [
-      "00.01",
-      "01",
-      "96.02C"
-    ]
   }
 }
