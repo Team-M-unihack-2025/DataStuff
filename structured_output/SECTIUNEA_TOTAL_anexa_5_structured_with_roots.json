@@ -1,0 +1,263 @@
+{
+  "00.01": {
+    "value": 54666100.0,
+    "name": "TOTAL VENITURI",
+    "subCategories": [
+      "00.02"
+    ]
+  },
+  "00.02": {
+    "value": 54666100.0,
+    "name": "I. VENITURI CURENTE",
+    "subCategories": [
+      "16.00.03"
+    ]
+  },
+  "16.00.03": {
+    "value": 54666100.0,
+    "name": "C. VENITURI NEFISCALE",
+    "subCategories": [
+      "16.00.04"
+    ]
+  },
+  "16.00.04": {
+    "value": 1684500.0,
+    "name": "C1. VENITURI DIN PROPRIETATE",
+    "subCategories": [
+      "30.02E"
+    ]
+  },
+  "30.02E": {
+    "value": 1684500.0,
+    "name": "Venituri din proprietate",
+    "subCategories": [
+      "30.02E.05",
+      "30.02E.50"
+    ]
+  },
+  "30.02E.05": {
+    "value": 1460500.0,
+    "name": "Venituri din concesiuni si inchirieri",
+    "subCategories": [
+      "30.02E.05.30"
+    ]
+  },
+  "30.02E.05.30": {
+    "value": 1460500.0,
+    "name": "Alte venituri din concesiuni si inchirieri de catre institutiile publice"
+  },
+  "30.02E.50": {
+    "value": 224000.0,
+    "name": "Alte venituri din proprietate"
+  },
+  "31.00.01": {
+    "value": 52981600.0,
+    "name": "C2. VANZARI DE BUNURI SI SERVICII",
+    "subCategories": [
+      "33.02E"
+    ]
+  },
+  "33.02E": {
+    "value": 51220610.0,
+    "name": "Venituri din prestari de servicii si alte activitati",
+    "subCategories": [
+      "33.02E.05",
+      "33.02E.08",
+      "33.02E.14",
+      "33.02E.16",
+      "33.02E.17",
+      "33.02E.50"
+    ]
+  },
+  "33.02E.05": {
+    "value": 10816810.0,
+    "name": "Taxe si alte venituri in invatamant"
+  },
+  "33.02E.08": {
+    "value": 192800.0,
+    "name": "Venituri din prestari de servicii"
+  },
+  "33.02E.14": {
+    "value": 31246700.0,
+    "name": "Contributia elevilor si studentilor pentru internate, camine si cantine"
+  },
+  "33.02E.16": {
+    "value": 43000.0,
+    "name": "Venituri din valorificarea produselor obtinute din activitatea proprie sau anexa"
+  },
+  "33.02E.17": {
+    "value": 240000.0,
+    "name": "Venituri din organizarea de cursuri de calificare si conversie profesionala, specializare si perfectionare"
+  },
+  "33.02E.50": {
+    "value": 8681300.0,
+    "name": "Alte venituri din prestari de servicii si alte activitati"
+  },
+  "34.02E": {
+    "value": 4000.0,
+    "name": "Venituri din taxe administrative, eliberari permise",
+    "subCategories": [
+      "34.02E.50"
+    ]
+  },
+  "34.02E.50": {
+    "value": 4000.0,
+    "name": "Alte venituri din taxe administrative, eliberari de permise"
+  },
+  "36.02E": {
+    "value": 1584500.0,
+    "name": "Diverse venituri",
+    "subCategories": [
+      "36.02E.50"
+    ]
+  },
+  "36.02E.50": {
+    "value": 1584500.0,
+    "name": "Alte venituri"
+  },
+  "37.02E": {
+    "value": 172490.0,
+    "name": "Transferuri voluntare, altele decat subventiile",
+    "subCategories": [
+      "37.02E.01",
+      "37.02E.50"
+    ]
+  },
+  "37.02E.01": {
+    "value": 69490.0,
+    "name": "Donatii si sponsorizari"
+  },
+  "37.02E.50": {
+    "value": 103000.0,
+    "name": "Alte transferuri voluntare"
+  },
+  "01": {
+    "value": 54666100.0,
+    "name": "CHELTUIELI CURENTE",
+    "subCategories": [
+      "10",
+      "20",
+      "57",
+      "59"
+    ]
+  },
+  "10": {
+    "value": 11567100.0,
+    "name": "TITLUL I CHELTUIELI DE PERSONAL"
+  },
+  "20": {
+    "value": 42657000.0,
+    "name": "TITLUL II BUNURI SI SERVICII"
+  },
+  "57": {
+    "value": 300000.0,
+    "name": "TITLUL IX ASISTENTA SOCIALA"
+  },
+  "59": {
+    "value": 142000.0,
+    "name": "TITLUL XI ALTE CHELTUIELI"
+  },
+  "64.02E": {
+    "value": 54666100.0,
+    "name": "Partea a III-a CHELTUIELI SOCIAL-CULTURALE",
+    "subCategories": [
+      "65.02E"
+    ]
+  },
+  "65.02E": {
+    "value": 54666100.0,
+    "name": "Invatamant",
+    "subCategories": [
+      "65.02E.03",
+      "65.02E.04",
+      "65.02E.05",
+      "65.02E.11"
+    ]
+  },
+  "65.02E.03": {
+    "value": 23167400.0,
+    "name": "Invatamant prescolar si primar",
+    "subCategories": [
+      "65.02E.03.01",
+      "65.02E.03.02"
+    ]
+  },
+  "65.02E.03.01": {
+    "value": 18825600.0,
+    "name": "Invatamant prescolar"
+  },
+  "65.02E.03.02": {
+    "value": 4341800.0,
+    "name": "Invatamant primar"
+  },
+  "65.02E.04": {
+    "value": 24857300.0,
+    "name": "Invatamant secundar",
+    "subCategories": [
+      "65.02E.04.01",
+      "65.02E.04.02",
+      "65.02E.04.03"
+    ]
+  },
+  "65.02E.04.01": {
+    "value": 7260000.0,
+    "name": "Invatamant secundar inferior"
+  },
+  "65.02E.04.02": {
+    "value": 17477300.0,
+    "name": "Invatamant secundar superior"
+  },
+  "65.02E.04.03": {
+    "value": 120000.0,
+    "name": "Invatamant profesional"
+  },
+  "65.02E.05": {
+    "value": 716400.0,
+    "name": "Invatamant postliceal"
+  },
+  "65.02E.11": {
+    "value": 5925000.0,
+    "name": "Servicii auxiliare pentru educatie",
+    "subCategories": [
+      "65.02E.11.03"
+    ]
+  },
+  "65.02E.11.03": {
+    "value": 5925000.0,
+    "name": "Internate si cantine pentru elevi"
+  },
+  "96.02E": {
+    "value": 0.0,
+    "name": "Partea a VII-a REZERVE, EXCEDENT/DEFICIT",
+    "subCategories": [
+      "97.02E",
+      "98.02E",
+      "99.02E"
+    ]
+  },
+  "97.02E": {
+    "value": 0.0,
+    "name": "REZERVE"
+  },
+  "98.02E": {
+    "value": 0.0,
+    "name": "EXCEDENT"
+  },
+  "99.02E": {
+    "value": 0.0,
+    "name": "DEFICIT"
+  },
+  "00.00": {
+    "name": "ALL ROOT ELEMENTS",
+    "subCategories": [
+      "00.01",
+      "01",
+      "31.00.01",
+      "34.02E",
+      "36.02E",
+      "37.02E",
+      "64.02E",
+      "96.02E"
+    ]
+  }
+}

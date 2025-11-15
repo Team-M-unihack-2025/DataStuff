@@ -1,0 +1,383 @@
+{
+  "00.01": {
+    "value": 1270041200.0,
+    "name": "TOTAL VENITURI",
+    "subCategories": [
+      "00.02",
+      "42.00.02"
+    ]
+  },
+  "00.02": {
+    "value": 806709280.0,
+    "name": "I. VENITURI CURENTE",
+    "subCategories": [
+      "16.00.03"
+    ]
+  },
+  "16.00.03": {
+    "value": 806709280.0,
+    "name": "C. VENITURI NEFISCALE",
+    "subCategories": [
+      "16.00.04",
+      "31.00.01",
+      "37.02F"
+    ]
+  },
+  "16.00.04": {
+    "value": 329250.0,
+    "name": "C1. VENITURI DIN PROPRIETATE",
+    "subCategories": [
+      "30.02F"
+    ]
+  },
+  "30.02F": {
+    "value": 329250.0,
+    "name": "Venituri din proprietate",
+    "subCategories": [
+      "30.02F.05"
+    ]
+  },
+  "30.02F.05": {
+    "value": 329250.0,
+    "name": "Venituri din concesiuni si inchirieri",
+    "subCategories": [
+      "30.02F.05.30"
+    ]
+  },
+  "30.02F.05.30": {
+    "value": 329250.0,
+    "name": "Alte venituri din concesiuni si inchirieri de catre institutiile publice"
+  },
+  "31.00.01": {
+    "value": 806380030.0,
+    "name": "C2. VANZARI DE BUNURI SI SERVICII",
+    "subCategories": [
+      "33.02F",
+      "36.02F"
+    ]
+  },
+  "33.02F": {
+    "value": 804375030.0,
+    "name": "Venituri din prestari de servicii si alte activitati",
+    "subCategories": [
+      "33.02F.08",
+      "33.02F.20",
+      "33.02F.21",
+      "33.02F.30",
+      "33.02F.50"
+    ]
+  },
+  "33.02F.08": {
+    "value": 5160960.0,
+    "name": "Venituri din prestari de servicii"
+  },
+  "33.02F.20": {
+    "value": 230000.0,
+    "name": "Venituri din cercetare"
+  },
+  "33.02F.21": {
+    "value": 537563800.0,
+    "name": "Venituri din contractele incheiate cu casele de asigurari sociale de sanatate"
+  },
+  "33.02F.30": {
+    "value": 260670270.0,
+    "name": "Venituri din contractele incheiate cu directiile de sanatate publica din sume alocate de la bugetul de stat"
+  },
+  "33.02F.50": {
+    "value": 750000.0,
+    "name": "Alte venituri din prestari de servicii si alte activitati"
+  },
+  "36.02F": {
+    "value": 2000000.0,
+    "name": "Diverse venituri",
+    "subCategories": [
+      "36.02F.50"
+    ]
+  },
+  "36.02F.50": {
+    "value": 2000000.0,
+    "name": "Alte venituri"
+  },
+  "37.02F": {
+    "value": 5000.0,
+    "name": "Transferuri voluntare, altele decat subventiile",
+    "subCategories": [
+      "37.02F.01",
+      "37.02F.03",
+      "37.02F.04"
+    ]
+  },
+  "37.02F.01": {
+    "value": 5000.0,
+    "name": "Donatii si sponsorizari"
+  },
+  "37.02F.03": {
+    "value": -2971410.0,
+    "name": "Varsaminte din sectiunea de functionare pentru finantarea sectiunii de dezvoltare a bugetelui local"
+  },
+  "37.02F.04": {
+    "value": 2971410.0,
+    "name": "Varsaminte din sectiunea de functionare"
+  },
+  "42.00.02": {
+    "value": 435655170.0,
+    "name": "SUBVENTII DE LA ALTE NIVELE ALE ADMINISTRATIEI PUBLICE",
+    "subCategories": [
+      "42.02F",
+      "43.02F",
+      "45.02F",
+      "48.02F"
+    ]
+  },
+  "42.02F": {
+    "value": 121520240.0,
+    "name": "Subventii de la bugetul de stat",
+    "subCategories": [
+      "42.02F.70",
+      "42.02F.88",
+      "42.02F.93"
+    ]
+  },
+  "42.02F.70": {
+    "value": 697840.0,
+    "name": "Subventii de la bugetul de stat catre institutii publice  finantate partial sau integral din venituri proprii necesare sustinerii derularii proiectelor  finantate din FEN postaderare, aferente perioadei de programare 2014-2020"
+  },
+  "42.02F.88": {
+    "value": 120086290.0,
+    "name": "Alocari de sume din PNRR aferente asisten?ei financiare nerambursabile",
+    "subCategories": [
+      "42.02F.88.01",
+      "42.02F.88.02",
+      "42.02F.88.03"
+    ]
+  },
+  "42.02F.88.01": {
+    "value": 94674850.0,
+    "name": "Fonduri europene nerambursabile"
+  },
+  "42.02F.88.02": {
+    "value": 3774290.0,
+    "name": "Finantare publica nationala"
+  },
+  "42.02F.88.03": {
+    "value": 21637150.0,
+    "name": "Sume aferente TVA"
+  },
+  "42.02F.93": {
+    "value": 736110.0,
+    "name": "Subventii de la bugetul de stat necesare sustinerii derularii proiectelor finantate din fonduri externe nerambursabile (FEN) postaderare, aferente perioadei de programare 2021-2027     (cod 42.02.93.01 + 42.02.93.03)",
+    "subCategories": [
+      "42.02F.93.04"
+    ]
+  },
+  "42.02F.93.04": {
+    "value": 736110.0,
+    "name": "Subventii de la bugetul de stat catre institutii publice finantate partial sau integral din venituri"
+  },
+  "43.02F": {
+    "value": 314134930.0,
+    "name": "Subventii de la alte administratii",
+    "subCategories": [
+      "43.02F.10",
+      "43.02F.14",
+      "43.02F.33"
+    ]
+  },
+  "43.02F.10": {
+    "value": 1329430.0,
+    "name": "Subventii de la bugetele locale pentru finantarea cheltuielilor curente in domeniul santatii"
+  },
+  "43.02F.14": {
+    "value": 26785500.0,
+    "name": "Subventii de la bugetul local pentru finantarea cheltuielilor de capital din domeniul santatii"
+  },
+  "43.02F.33": {
+    "value": 286020000.0,
+    "name": "Subventii din bugetul Fondului national unic de asigurari sociale de sanatate pentru acoperirea cresterilor salariale"
+  },
+  "45.02F": {
+    "value": 22536750.0,
+    "name": "Sume FEN postaderare in contul platilor efectuate",
+    "subCategories": [
+      "45.02F.48",
+      "45.02F.49",
+      "45.02F.65"
+    ]
+  },
+  "45.02F.48": {
+    "value": 4171270.0,
+    "name": "Fondul European de Dezvoltare Regionala (FEDR), aferent cadrului financiar 2021-2027",
+    "subCategories": [
+      "45.02F.48.03"
+    ]
+  },
+  "45.02F.48.03": {
+    "value": 4171270.0,
+    "name": "Prefinantare"
+  },
+  "45.02F.49": {
+    "value": 3884110.0,
+    "name": "Fondul Social European Plus (FSE+), aferent cadrului financiar 2021-2027",
+    "subCategories": [
+      "45.02F.49.03"
+    ]
+  },
+  "45.02F.49.03": {
+    "value": 3884110.0,
+    "name": "Prefinantare"
+  },
+  "45.02F.65": {
+    "value": 14481370.0,
+    "name": "Instrumentul de asistenta pentru preaderare (IPA III)",
+    "subCategories": [
+      "45.02F.65.01",
+      "45.02F.65.02",
+      "45.02F.65.03"
+    ]
+  },
+  "45.02F.65.01": {
+    "value": 13931370.0,
+    "name": "Sume primite in contul platilor efectuate in anul curent"
+  },
+  "45.02F.65.02": {
+    "value": 50000.0,
+    "name": "Sume primite in contul platilor efectuate in anii anteriori"
+  },
+  "45.02F.65.03": {
+    "value": 500000.0,
+    "name": "Prefinantare"
+  },
+  "48.02F": {
+    "value": 5140000.0,
+    "name": "Sume primite de la UE/alti donatori în contul platilor efectuate si prefinantari aferente cadrului financiar 2014-2020",
+    "subCategories": [
+      "48.02F.01",
+      "48.02F.02"
+    ]
+  },
+  "48.02F.01": {
+    "value": 1500000.0,
+    "name": "Fondul European de Dezvoltare Regionala (FEDR)",
+    "subCategories": [
+      "48.02F.01.02"
+    ]
+  },
+  "48.02F.01.02": {
+    "value": 1500000.0,
+    "name": "Sume primite în contul platilor efectuate în anii anteriori"
+  },
+  "48.02F.02": {
+    "value": 3640000.0,
+    "name": "Fondul Social European (FSE)",
+    "subCategories": [
+      "48.02F.02.02"
+    ]
+  },
+  "48.02F.02.02": {
+    "value": 3640000.0,
+    "name": "Sume primite în contul platilor efectuate în anii anteriori"
+  },
+  "01": {
+    "value": 1242931110.0,
+    "name": "CHELTUIELI CURENTE",
+    "subCategories": [
+      "10",
+      "20",
+      "56",
+      "58",
+      "59",
+      "60"
+    ]
+  },
+  "10": {
+    "value": 691610000.0,
+    "name": "TITLUL I CHELTUIELI DE PERSONAL"
+  },
+  "20": {
+    "value": 394017300.0,
+    "name": "TITLUL II BUNURI SI SERVICII"
+  },
+  "56": {
+    "value": 23272860.0,
+    "name": "Titlul VIII PROIECTE CU FINANTARE DIN FONDURI EXTERNE NERAMBURSABILE (FEN) POSTADERARE"
+  },
+  "58": {
+    "value": 697840.0,
+    "name": "TITLUL X Proiecte cu finantare din fonduri externe nerambursabile aferente cadrului financiar 2014-2020"
+  },
+  "59": {
+    "value": 5460000.0,
+    "name": "TITLUL XI ALTE CHELTUIELI"
+  },
+  "60": {
+    "value": 127873110.0,
+    "name": "TITLUL XII PROIECTE CU FINANTARE DIN SUMELE REPREZENTAND ASISTENTA FINANCIARA NERAMBURSABILA AFERENTA PNRR"
+  },
+  "70": {
+    "value": 27110090.0,
+    "name": "CHELTUIELI DE CAPITAL",
+    "subCategories": [
+      "71"
+    ]
+  },
+  "71": {
+    "value": 27110090.0,
+    "name": "TITLUL XV ACTIVE NEFINANCIARE"
+  },
+  "64.02F": {
+    "value": 1270041200.0,
+    "name": "Partea a III-a CHELTUIELI SOCIAL-CULTURALE",
+    "subCategories": [
+      "66.02F"
+    ]
+  },
+  "66.02F": {
+    "value": 1270041200.0,
+    "name": "Sanatate",
+    "subCategories": [
+      "66.02F.06"
+    ]
+  },
+  "66.02F.06": {
+    "value": 1270041200.0,
+    "name": "Servicii medicale in unitati sanitare cu paturi",
+    "subCategories": [
+      "66.02F.06.01"
+    ]
+  },
+  "66.02F.06.01": {
+    "value": 1270041200.0,
+    "name": "Spitale generale"
+  },
+  "96.02F": {
+    "value": 0.0,
+    "name": "Partea a VII-a REZERVE, EXCEDENT/DEFICIT",
+    "subCategories": [
+      "97.02F",
+      "98.02F",
+      "99.02F"
+    ]
+  },
+  "97.02F": {
+    "value": 0.0,
+    "name": "REZERVE"
+  },
+  "98.02F": {
+    "value": 0.0,
+    "name": "EXCEDENT"
+  },
+  "99.02F": {
+    "value": 0.0,
+    "name": "DEFICIT"
+  },
+  "00.00": {
+    "name": "ALL ROOT ELEMENTS",
+    "subCategories": [
+      "00.01",
+      "01",
+      "64.02F",
+      "70",
+      "96.02F"
+    ]
+  }
+}

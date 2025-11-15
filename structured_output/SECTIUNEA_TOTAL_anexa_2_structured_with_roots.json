@@ -1,0 +1,1152 @@
+{
+  "00.01": {
+    "value": 2388257760.0,
+    "name": "TOTAL VENITURI",
+    "subCategories": [
+      "00.02",
+      "39.00.01",
+      "42.00.01"
+    ]
+  },
+  "00.02": {
+    "value": 1278943070.0,
+    "name": "VENITURI PROPRII",
+    "subCategories": [
+      "00.03",
+      "39.00.01",
+      "42.00.01"
+    ]
+  },
+  "00.03": {
+    "value": 1552087790.0,
+    "name": "I. VENITURI CURENTE",
+    "subCategories": [
+      "00.04",
+      "30.00.01"
+    ]
+  },
+  "00.04": {
+    "value": 1494469860.0,
+    "name": "A. VENITURI FISCALE",
+    "subCategories": [
+      "00.05",
+      "07.00.01",
+      "11.00.01",
+      "12.02A",
+      "18.00.01"
+    ]
+  },
+  "00.05": {
+    "value": 890293620.0,
+    "name": "A1. IMPOZIT PE VENIT, PROFIT SI CASTIGURI DIN CAPITAL",
+    "subCategories": [
+      "03.00.01",
+      "03.02A",
+      "04.02A",
+      "05.00.01",
+      "05.02A"
+    ]
+  },
+  "03.00.01": {
+    "value": 890291640.0,
+    "name": "A12. IMPOZIT PE VENIT, PROFIT, SI CASTIGURI DIN CAPITAL DE LA PERSOANE FIZICE"
+  },
+  "03.02A": {
+    "value": 15413640.0,
+    "name": "Impozit pe venit",
+    "subCategories": [
+      "03.02A.18"
+    ]
+  },
+  "03.02A.18": {
+    "value": 15413640.0,
+    "name": "Impozitul pe veniturile din transferul proprietatilor imobiliare din patrimoniul personal"
+  },
+  "04.02A": {
+    "value": 874878000.0,
+    "name": "Cote si sume defalcate din impozitul pe venit",
+    "subCategories": [
+      "04.02A.01",
+      "04.02A.05"
+    ]
+  },
+  "04.02A.01": {
+    "value": 874478000.0,
+    "name": "Cote defalcate din impozitul pe venit"
+  },
+  "04.02A.05": {
+    "value": 400000.0,
+    "name": "Sume repartizate din Fondul la dispozitia Consiliului Judetean"
+  },
+  "05.00.01": {
+    "value": 1980.0,
+    "name": "A13. ALTE IMPOZITE PE VENIT, PROFIT SI CASTIGURI DIN CAPITAL"
+  },
+  "05.02A": {
+    "value": 1980.0,
+    "name": "Alte impozite pe venit, profit si castiguri din capital",
+    "subCategories": [
+      "05.02A.50"
+    ]
+  },
+  "05.02A.50": {
+    "value": 1980.0,
+    "name": "Alte impozite pe venit, profit si castiguri din capital"
+  },
+  "07.00.01": {
+    "value": 260055830.0,
+    "name": "A3. IMPOZITE SI TAXE PE PROPRIETATE",
+    "subCategories": [
+      "07.02A"
+    ]
+  },
+  "07.02A": {
+    "value": 260055830.0,
+    "name": "Impozite si taxe pe proprietate",
+    "subCategories": [
+      "07.02A.01",
+      "07.02A.02",
+      "07.02A.03",
+      "07.02A.50"
+    ]
+  },
+  "07.02A.01": {
+    "value": 228886630.0,
+    "name": "Impozit pe cladiri",
+    "subCategories": [
+      "07.02A.01.01",
+      "07.02A.01.02"
+    ]
+  },
+  "07.02A.01.01": {
+    "value": 57420060.0,
+    "name": "Impozit pe cladiri de la persoane fizice"
+  },
+  "07.02A.01.02": {
+    "value": 171466570.0,
+    "name": "Impozit si taxa pe cladiri de la persoane juridice"
+  },
+  "07.02A.02": {
+    "value": 20921500.0,
+    "name": "Impozit pe terenuri",
+    "subCategories": [
+      "07.02A.02.01",
+      "07.02A.02.02",
+      "07.02A.02.03"
+    ]
+  },
+  "07.02A.02.01": {
+    "value": 9592900.0,
+    "name": "Impozit pe terenuri de la persoane fizice"
+  },
+  "07.02A.02.02": {
+    "value": 10927130.0,
+    "name": "Impozit si taxa pe teren de la persoane juridice"
+  },
+  "07.02A.02.03": {
+    "value": 401470.0,
+    "name": "Impozit pe terenul din extravilan"
+  },
+  "07.02A.03": {
+    "value": 8981640.0,
+    "name": "Taxe judiciare de timbru si alte taxe de timbru"
+  },
+  "07.02A.50": {
+    "value": 1266060.0,
+    "name": "Alte impozite si taxe de proprietate"
+  },
+  "11.00.01": {
+    "value": 335077690.0,
+    "name": "A4. IMPOZITE SI TAXE PE BUNURI SI SERVICII",
+    "subCategories": [
+      "11.02A",
+      "12.02A",
+      "15.02A",
+      "16.02A"
+    ]
+  },
+  "11.02A": {
+    "value": 273271680.0,
+    "name": "Sume defalcate din TVA (se scad)",
+    "subCategories": [
+      "11.02A.02",
+      "11.02A.06",
+      "11.02A.09"
+    ]
+  },
+  "11.02A.02": {
+    "value": 231876680.0,
+    "name": "Sume defalcate din taxa pe valoarea adaugata pentru finantarea cheltuielilor descentralizate la nivelul comunelor, oraselor, municipiilor, sectoarelor  si Municipiului Bucuresti"
+  },
+  "11.02A.06": {
+    "value": 3300000.0,
+    "name": "Sume defalcate din taxa pe valoarea adaugata pentru echilibrarea bugetelor locale"
+  },
+  "11.02A.09": {
+    "value": 38095000.0,
+    "name": "Sume defalcate din taxa pe valoarea adaugata pentru finantarea invatamantului particular si a celui confesional"
+  },
+  "12.02A": {
+    "value": 5780.0,
+    "name": "ALTE IMPOZITE SI TAXE GENERALE PE BUNURI SI SERVICII",
+    "subCategories": [
+      "12.02A.07"
+    ]
+  },
+  "12.02A.07": {
+    "value": 5780.0,
+    "name": "Taxe hoteliere"
+  },
+  "15.02A": {
+    "value": 48940.0,
+    "name": "Taxe pe servicii specifice",
+    "subCategories": [
+      "15.02A.01",
+      "15.02A.50"
+    ]
+  },
+  "15.02A.01": {
+    "value": 2440.0,
+    "name": "Impozit pe spectacole"
+  },
+  "15.02A.50": {
+    "value": 46500.0,
+    "name": "Alte taxe pe servicii specifice"
+  },
+  "16.02A": {
+    "value": 61751290.0,
+    "name": "Taxe pe utilizarea bunurilor, autorizarea utilizarii bunurilor sau pe desfasurarea de activitati",
+    "subCategories": [
+      "16.02A.02",
+      "16.02A.03",
+      "16.02A.50"
+    ]
+  },
+  "16.02A.02": {
+    "value": 55117000.0,
+    "name": "Taxa asupra mijloacelor de transport",
+    "subCategories": [
+      "16.02A.02.01",
+      "16.02A.02.02"
+    ]
+  },
+  "16.02A.02.01": {
+    "value": 37141960.0,
+    "name": "Impozit pe mijloacele de transport detinute de persoane fizice"
+  },
+  "16.02A.02.02": {
+    "value": 17975040.0,
+    "name": "Impozit pe mijloacele de transport detinute de persoane juridice"
+  },
+  "16.02A.03": {
+    "value": 24360.0,
+    "name": "Taxe si tarife pentru eliberarea de licente si autorizatii de functionare"
+  },
+  "16.02A.50": {
+    "value": 6609930.0,
+    "name": "Alte taxe pe utilizarea bunurilor, autorizarea utilizarii bunurilor sau pe desfasurare de activitati"
+  },
+  "18.00.01": {
+    "value": 9042720.0,
+    "name": "A6. ALTE IMPOZITE SI TAXE FISCALE",
+    "subCategories": [
+      "18.02A"
+    ]
+  },
+  "18.02A": {
+    "value": 9042720.0,
+    "name": "Alte impozite si taxe fiscale",
+    "subCategories": [
+      "18.02A.50"
+    ]
+  },
+  "18.02A.50": {
+    "value": 9042720.0,
+    "name": "Alte impozite si taxe"
+  },
+  "30.00.01": {
+    "value": 57617930.0,
+    "name": "C. VENITURI NEFISCALE",
+    "subCategories": [
+      "30.00.02",
+      "33.00.01"
+    ]
+  },
+  "30.00.02": {
+    "value": 21757640.0,
+    "name": "C1. VENITURI DIN PROPRIETATE",
+    "subCategories": [
+      "30.02A",
+      "31.02A"
+    ]
+  },
+  "30.02A": {
+    "value": 21749240.0,
+    "name": "Venituri din proprietate",
+    "subCategories": [
+      "30.02A.05",
+      "30.02A.08"
+    ]
+  },
+  "30.02A.05": {
+    "value": 16891460.0,
+    "name": "Venituri din concesiuni si inchirieri",
+    "subCategories": [
+      "30.02A.05.30"
+    ]
+  },
+  "30.02A.05.30": {
+    "value": 16891460.0,
+    "name": "Alte venituri din concesiuni si inchirieri de catre institutiile publice"
+  },
+  "30.02A.08": {
+    "value": 4857780.0,
+    "name": "Venituri din dividende",
+    "subCategories": [
+      "30.02A.08.02",
+      "30.02A.08.03"
+    ]
+  },
+  "30.02A.08.02": {
+    "value": 16790.0,
+    "name": "Venituri din dividende de la alti platitori"
+  },
+  "30.02A.08.03": {
+    "value": 4840990.0,
+    "name": "Dividende de la societatile si companiile nationale si societatile cu capital majoritar de stat"
+  },
+  "31.02A": {
+    "value": 8400.0,
+    "name": "Venituri din dobanzi",
+    "subCategories": [
+      "31.02A.03"
+    ]
+  },
+  "31.02A.03": {
+    "value": 8400.0,
+    "name": "Alte venituri din dobanzi"
+  },
+  "33.00.01": {
+    "value": 35860290.0,
+    "name": "C2. VANZARI DE BUNURI SI SERVICII",
+    "subCategories": [
+      "33.02A",
+      "34.02A",
+      "35.02A",
+      "36.02A",
+      "37.02A.03",
+      "37.02A.04"
+    ]
+  },
+  "33.02A": {
+    "value": 1391100.0,
+    "name": "Venituri din prestari de servicii si alte activitati",
+    "subCategories": [
+      "33.02A.12",
+      "33.02A.26",
+      "33.02A.28"
+    ]
+  },
+  "33.02A.12": {
+    "value": 1066410.0,
+    "name": "Contributia persoanelor beneficiare ale cantinelor de ajutor social"
+  },
+  "33.02A.26": {
+    "value": 4290.0,
+    "name": "Venituri din despagubiri"
+  },
+  "33.02A.28": {
+    "value": 320400.0,
+    "name": "Venituri din recuperarea cheltuielilor de judecata, imputatii si despagubiri"
+  },
+  "34.02A": {
+    "value": 854060.0,
+    "name": "Venituri din taxe administrative, eliberari permise",
+    "subCategories": [
+      "34.02A.50"
+    ]
+  },
+  "34.02A.50": {
+    "value": 854060.0,
+    "name": "Alte venituri din taxe administrative, eliberari de permise"
+  },
+  "35.02A": {
+    "value": 22846710.0,
+    "name": "Amenzi, penalitati si confiscari",
+    "subCategories": [
+      "35.02A.01",
+      "35.02A.50"
+    ]
+  },
+  "35.02A.01": {
+    "value": 21312170.0,
+    "name": "Venituri din amenzi si alte sanctiuni aplicate conform dispozitiilor legale",
+    "subCategories": [
+      "35.02A.01.02"
+    ]
+  },
+  "35.02A.01.02": {
+    "value": 21312170.0,
+    "name": "Venituri din amenzi si alte sanctiuni aplicate de catre alte institutii de specialitate"
+  },
+  "35.02A.50": {
+    "value": 1534540.0,
+    "name": "Alte amenzi, penalitati si confiscari"
+  },
+  "36.02A": {
+    "value": 10768420.0,
+    "name": "Diverse venituri",
+    "subCategories": [
+      "36.02A.06",
+      "36.02A.11",
+      "36.02A.14",
+      "36.02A.23",
+      "36.02A.50"
+    ]
+  },
+  "36.02A.06": {
+    "value": 8355460.0,
+    "name": "Taxe speciale"
+  },
+  "36.02A.11": {
+    "value": 2400.0,
+    "name": "Venituri din ajutoare de stat recuperate"
+  },
+  "36.02A.14": {
+    "value": 129860.0,
+    "name": "Venituri din recuperarea cheltuielilor efectuate in cursul procesului de executare silita"
+  },
+  "36.02A.23": {
+    "value": 867710.0,
+    "name": "Taxa de reabilitare termica"
+  },
+  "36.02A.50": {
+    "value": 1412990.0,
+    "name": "Alte venituri"
+  },
+  "37.02A.03": {
+    "value": -272029830.0,
+    "name": "Varsaminte din sectiunea de functionare pentru finantarea sectiunii de dezvoltare a bugetelui local"
+  },
+  "37.02A.04": {
+    "value": 272029830.0,
+    "name": "Varsaminte din sectiunea de functionare"
+  },
+  "39.00.01": {
+    "value": 126960.0,
+    "name": "II. VENITURI DIN CAPITAL",
+    "subCategories": [
+      "39.02A"
+    ]
+  },
+  "39.02A": {
+    "value": 126960.0,
+    "name": "Venituri din valorificarea unor bunuri",
+    "subCategories": [
+      "39.02A.03",
+      "39.02A.07"
+    ]
+  },
+  "39.02A.03": {
+    "value": 125000.0,
+    "name": "Venituri din vanzarea locuintelor construite din fondurile statului"
+  },
+  "39.02A.07": {
+    "value": 1960.0,
+    "name": "Venituri din vanzarea unor bunuri apartinand domeniului privat al statului sau al unitatilor administrativ-teritoriale"
+  },
+  "42.00.01": {
+    "value": 777044940.0,
+    "name": "IV. SUBVENTII",
+    "subCategories": [
+      "42.00.02"
+    ]
+  },
+  "42.00.02": {
+    "value": 777044940.0,
+    "name": "SUBVENTII DE LA ALTE NIVELE ALE ADMINISTRATIEI PUBLICE",
+    "subCategories": [
+      "42.02A",
+      "43.02A"
+    ]
+  },
+  "42.02A": {
+    "value": 772044940.0,
+    "name": "Subventii de la bugetul de stat",
+    "subCategories": [
+      "42.02A.34",
+      "42.02A.66",
+      "42.02A.69",
+      "42.02A.87",
+      "42.02A.88",
+      "42.02A.89",
+      "42.02A.93"
+    ]
+  },
+  "42.02A.34": {
+    "value": 407620.0,
+    "name": "Subventii pentru acordarea ajutorului pentru incalzirea locuintei si a suplimentului pentru energie alocate pentru consumul de combustibili solizi si sau petrolieri"
+  },
+  "42.02A.66": {
+    "value": 20500000.0,
+    "name": "Subventii din bugetul de stat alocate conform contractelor incheiate cu directiile de sanatate publica"
+  },
+  "42.02A.69": {
+    "value": 5372020.0,
+    "name": "Subventii de la bugetul de stat catre bugetele locale necesare sustinerii derularii proiectelor finantate din fonduri externe nerambursabile (FEN) postaderare, aferente perioadei de programare 2014 - 2020"
+  },
+  "42.02A.87": {
+    "value": 7930680.0,
+    "name": "Subventii de la bugetul de stat catre bugetele locale pentru Programul national de investitii „Anghel Saligny”"
+  },
+  "42.02A.88": {
+    "value": 286005120.0,
+    "name": "Alocari de sume din PNRR aferente asisten?ei financiare nerambursabile",
+    "subCategories": [
+      "42.02A.88.01",
+      "42.02A.88.03"
+    ]
+  },
+  "42.02A.88.01": {
+    "value": 231664150.0,
+    "name": "Fonduri europene nerambursabile"
+  },
+  "42.02A.88.03": {
+    "value": 54340970.0,
+    "name": "Sume aferente TVA"
+  },
+  "42.02A.89": {
+    "value": 444777800.0,
+    "name": "Alocari de sume din PNRR aferente componentei împrumuturi",
+    "subCategories": [
+      "42.02A.89.01",
+      "42.02A.89.03"
+    ]
+  },
+  "42.02A.89.01": {
+    "value": 360270020.0,
+    "name": "Fonduri din imprumut rambursabil"
+  },
+  "42.02A.89.03": {
+    "value": 84507780.0,
+    "name": "Sume aferente TVA"
+  },
+  "42.02A.93": {
+    "value": 7051700.0,
+    "name": "Subventii de la bugetul de stat necesare sustinerii derularii proiectelor finantate din fonduri externe nerambursabile (FEN) postaderare, aferente perioadei de programare 2021-2027     (cod 42.02.93.01 + 42.02.93.03)",
+    "subCategories": [
+      "42.02A.93.03"
+    ]
+  },
+  "42.02A.93.03": {
+    "value": 7051700.0,
+    "name": "Subventii de la bugetul de stat catre bugetele locale necesare sustinerii derularii proiectelor finantate din FEN postaderare, aferente perioadei de programare 2021-2027"
+  },
+  "43.02A": {
+    "value": 5000000.0,
+    "name": "Subventii de la alte administratii",
+    "subCategories": [
+      "43.02A.47"
+    ]
+  },
+  "43.02A.47": {
+    "value": 5000000.0,
+    "name": "Sume aferente investitiilor din Fondul pentru modernizare"
+  },
+  "45.02A": {
+    "value": 51820310.0,
+    "name": "Sume FEN postaderare in contul platilor efectuate",
+    "subCategories": [
+      "45.02A.48",
+      "45.02A.49"
+    ]
+  },
+  "45.02A.48": {
+    "value": 51635310.0,
+    "name": "Fondul European de Dezvoltare Regionala (FEDR), aferent cadrului financiar 2021-2027",
+    "subCategories": [
+      "45.02A.48.01",
+      "45.02A.48.02"
+    ]
+  },
+  "45.02A.48.01": {
+    "value": 43636650.0,
+    "name": "Sume primite in contul platilor efectuate in anul curent"
+  },
+  "45.02A.48.02": {
+    "value": 7998660.0,
+    "name": "Sume primite in contul platilor efectuate in anii anteriori"
+  },
+  "45.02A.49": {
+    "value": 185000.0,
+    "name": "Fondul Social European Plus (FSE+), aferent cadrului financiar 2021-2027",
+    "subCategories": [
+      "45.02A.49.03"
+    ]
+  },
+  "45.02A.49.03": {
+    "value": 185000.0,
+    "name": "Prefinantare"
+  },
+  "48.02A": {
+    "value": 7177760.0,
+    "name": "Sume primite de la UE/alti donatori în contul platilor efectuate si prefinantari aferente cadrului financiar 2014-2020",
+    "subCategories": [
+      "48.02A.01"
+    ]
+  },
+  "48.02A.01": {
+    "value": 7177760.0,
+    "name": "Fondul European de Dezvoltare Regionala (FEDR)",
+    "subCategories": [
+      "48.02A.01.01",
+      "48.02A.01.02"
+    ]
+  },
+  "48.02A.01.01": {
+    "value": 800.0,
+    "name": "Sume primite in contul platilor efectuate în anul curent"
+  },
+  "48.02A.01.02": {
+    "value": 7176960.0,
+    "name": "Sume primite în contul platilor efectuate în anii anteriori"
+  },
+  "01": {
+    "value": 517231280.0,
+    "name": "CHELTUIELI CURENTE",
+    "subCategories": [
+      "10",
+      "20",
+      "30",
+      "40",
+      "50",
+      "51",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61"
+    ]
+  },
+  "10": {
+    "value": 85000000.0,
+    "name": "TITLUL I CHELTUIELI DE PERSONAL"
+  },
+  "20": {
+    "value": 89354000.0,
+    "name": "TITLUL II BUNURI SI SERVICII"
+  },
+  "30": {
+    "value": 27222900.0,
+    "name": "TITLUL III DOBANZI"
+  },
+  "40": {
+    "value": 89082680.0,
+    "name": "TITLUL IV SUBVENTII"
+  },
+  "50": {
+    "value": 4800000.0,
+    "name": "TITLUL V FONDURI DE REZERVA"
+  },
+  "51": {
+    "value": 1683530.0,
+    "name": "TITLUL VI TRANSFERURI INTRE UNITATI ALE ADMINISTRATIEI PUBLICE"
+  },
+  "55": {
+    "value": 2913000.0,
+    "name": "TITLUL VII ALTE TRANSFERURI"
+  },
+  "56": {
+    "value": 330000.0,
+    "name": "Titlul VIII PROIECTE CU FINANTARE DIN FONDURI EXTERNE NERAMBURSABILE (FEN) POSTADERARE"
+  },
+  "57": {
+    "value": 64860000.0,
+    "name": "TITLUL IX ASISTENTA SOCIALA"
+  },
+  "58": {
+    "value": 120320.0,
+    "name": "TITLUL X Proiecte cu finantare din fonduri externe nerambursabile aferente cadrului financiar 2014-2020"
+  },
+  "59": {
+    "value": 9000000.0,
+    "name": "TITLUL XI ALTE CHELTUIELI"
+  },
+  "60": {
+    "value": 338344280.0,
+    "name": "TITLUL XII PROIECTE CU FINANTARE DIN SUMELE REPREZENTAND ASISTENTA FINANCIARA NERAMBURSABILA AFERENTA PNRR"
+  },
+  "61": {
+    "value": 58910010.0,
+    "name": "TITLUL XIII PROIECTE CU FINANTARE DIN SUMELE AFERENTE COMPONENTEI DE IMPRUMUT A PNRR"
+  },
+  "70": {
+    "value": 140075090.0,
+    "name": "CHELTUIELI DE CAPITAL",
+    "subCategories": [
+      "71",
+      "72"
+    ]
+  },
+  "71": {
+    "value": 140075090.0,
+    "name": "TITLUL XV ACTIVE NEFINANCIARE"
+  },
+  "72": {
+    "value": 35400000.0,
+    "name": "TITLUL XVI ACTIVE FINANCIARE"
+  },
+  "79": {
+    "value": 57425250.0,
+    "name": "OPERATIUNI FINANCIARE",
+    "subCategories": [
+      "81"
+    ]
+  },
+  "81": {
+    "value": 57425250.0,
+    "name": "TITLUL XIX RAMBURSARI DE CREDITE"
+  },
+  "50.02A": {
+    "value": 181689570.0,
+    "name": "Partea I-a SERVICII PUBLICE GENERALE",
+    "subCategories": [
+      "51.02A",
+      "54.02A",
+      "55.02A"
+    ]
+  },
+  "51.02A": {
+    "value": 148833670.0,
+    "name": "Autoritati publice si actiuni externe",
+    "subCategories": [
+      "51.02A.01"
+    ]
+  },
+  "51.02A.01": {
+    "value": 148833670.0,
+    "name": "Autoritati executive si legislative",
+    "subCategories": [
+      "51.02A.01.03"
+    ]
+  },
+  "51.02A.01.03": {
+    "value": 148833670.0,
+    "name": "Autoritati executive"
+  },
+  "54.02A": {
+    "value": 5433000.0,
+    "name": "Alte servicii publice generale",
+    "subCategories": [
+      "54.02A.05",
+      "54.02A.50"
+    ]
+  },
+  "54.02A.05": {
+    "value": 4800000.0,
+    "name": "Fond de rezerva bugetara la dispozitia autoritatilor locale"
+  },
+  "54.02A.50": {
+    "value": 633000.0,
+    "name": "Alte servicii publice generale"
+  },
+  "55.02A": {
+    "value": 27422900.0,
+    "name": "Tranzactii privind datoria publica si imprumuturi",
+    "subCategories": [
+      "55.02A.00"
+    ]
+  },
+  "55.02A.00": {
+    "value": 27422900.0,
+    "name": "Tranzactii privind datoria publica si imprumuturi"
+  },
+  "59.02A": {
+    "value": 46583220.0,
+    "name": "Partea a II-a APARARE, ORDINE PUBLICA SI SIGURANTA NATIONALA",
+    "subCategories": [
+      "61.02A"
+    ]
+  },
+  "61.02A": {
+    "value": 46583220.0,
+    "name": "Ordine publica si siguranta nationala",
+    "subCategories": [
+      "61.02A.03",
+      "61.02A.05"
+    ]
+  },
+  "61.02A.03": {
+    "value": 45952330.0,
+    "name": "Ordine publica",
+    "subCategories": [
+      "61.02A.03.04"
+    ]
+  },
+  "61.02A.03.04": {
+    "value": 45952330.0,
+    "name": "Politie locala"
+  },
+  "61.02A.05": {
+    "value": 630890.0,
+    "name": "Protectie civila si protectie contra incendiilor (protectie civila nonmilitara)"
+  },
+  "64.02A": {
+    "value": 997735760.0,
+    "name": "Partea a III-a CHELTUIELI SOCIAL-CULTURALE",
+    "subCategories": [
+      "65.02A",
+      "66.02A",
+      "67.02A",
+      "68.02A"
+    ]
+  },
+  "65.02A": {
+    "value": 451250430.0,
+    "name": "Invatamant",
+    "subCategories": [
+      "65.02A.03",
+      "65.02A.04",
+      "65.02A.11",
+      "65.02A.13",
+      "65.02A.50"
+    ]
+  },
+  "65.02A.03": {
+    "value": 3586960.0,
+    "name": "Invatamant prescolar si primar",
+    "subCategories": [
+      "65.02A.03.01"
+    ]
+  },
+  "65.02A.03.01": {
+    "value": 3586960.0,
+    "name": "Invatamant prescolar"
+  },
+  "65.02A.04": {
+    "value": 365548140.0,
+    "name": "Invatamant secundar",
+    "subCategories": [
+      "65.02A.04.01",
+      "65.02A.04.02"
+    ]
+  },
+  "65.02A.04.01": {
+    "value": 33177750.0,
+    "name": "Invatamant secundar inferior"
+  },
+  "65.02A.04.02": {
+    "value": 332370390.0,
+    "name": "Invatamant secundar superior"
+  },
+  "65.02A.11": {
+    "value": 400000.0,
+    "name": "Servicii auxiliare pentru educatie",
+    "subCategories": [
+      "65.02A.11.30"
+    ]
+  },
+  "65.02A.11.30": {
+    "value": 400000.0,
+    "name": "Alte servicii auxiliare"
+  },
+  "65.02A.13": {
+    "value": 16855330.0,
+    "name": "Invatamant anteprescolar"
+  },
+  "65.02A.50": {
+    "value": 64860000.0,
+    "name": "Alte cheltuieli in domeniul invatamantului"
+  },
+  "66.02A": {
+    "value": 78088720.0,
+    "name": "Sanatate",
+    "subCategories": [
+      "66.02A.06",
+      "66.02A.08"
+    ]
+  },
+  "66.02A.06": {
+    "value": 50660040.0,
+    "name": "Servicii medicale in unitati sanitare cu paturi",
+    "subCategories": [
+      "66.02A.06.01"
+    ]
+  },
+  "66.02A.06.01": {
+    "value": 50660040.0,
+    "name": "Spitale generale"
+  },
+  "66.02A.08": {
+    "value": 27428680.0,
+    "name": "Servicii de sanatate publica"
+  },
+  "67.02A": {
+    "value": 282282580.0,
+    "name": "Cultura, recreere si religie",
+    "subCategories": [
+      "67.02A.03",
+      "67.02A.05",
+      "67.02A.06",
+      "67.02A.50"
+    ]
+  },
+  "67.02A.03": {
+    "value": 103399090.0,
+    "name": "Servicii culturale",
+    "subCategories": [
+      "67.02A.03.04",
+      "67.02A.03.06"
+    ]
+  },
+  "67.02A.03.04": {
+    "value": 88334590.0,
+    "name": "Institutii publice de spectacole si concese"
+  },
+  "67.02A.03.06": {
+    "value": 15064500.0,
+    "name": "Case de cultura"
+  },
+  "67.02A.05": {
+    "value": 141767970.0,
+    "name": "Servicii recreative si sportive",
+    "subCategories": [
+      "67.02A.05.01",
+      "67.02A.05.03"
+    ]
+  },
+  "67.02A.05.01": {
+    "value": 85508500.0,
+    "name": "Sport"
+  },
+  "67.02A.05.03": {
+    "value": 56259470.0,
+    "name": "Intretinere gradini publice, parcuri, zone verzi, baze sportive si de agrement"
+  },
+  "67.02A.06": {
+    "value": 2333040.0,
+    "name": "Servicii religioase"
+  },
+  "67.02A.50": {
+    "value": 34782480.0,
+    "name": "Alte servicii în domeniile culturii, recreerii si religiei"
+  },
+  "68.02A": {
+    "value": 186114030.0,
+    "name": "Asigurari si asistenta sociala",
+    "subCategories": [
+      "68.02A.04",
+      "68.02A.05",
+      "68.02A.06",
+      "68.02A.11",
+      "68.02A.15"
+    ]
+  },
+  "68.02A.04": {
+    "value": 10391340.0,
+    "name": "Asistenta acordata persoanelor in varsta"
+  },
+  "68.02A.05": {
+    "value": 134310530.0,
+    "name": "Asistenta sociala in caz de boli si invaliditati",
+    "subCategories": [
+      "68.02A.05.02"
+    ]
+  },
+  "68.02A.05.02": {
+    "value": 134310530.0,
+    "name": "Asistenta sociala in caz de invaliditate"
+  },
+  "68.02A.06": {
+    "value": 8614320.0,
+    "name": "Asistenta sociala pentru familie si copii"
+  },
+  "68.02A.11": {
+    "value": 2473110.0,
+    "name": "Crese"
+  },
+  "68.02A.15": {
+    "value": 30324730.0,
+    "name": "Prevenirea excluderii sociale",
+    "subCategories": [
+      "68.02A.15.01",
+      "68.02A.15.02"
+    ]
+  },
+  "68.02A.15.01": {
+    "value": 20295570.0,
+    "name": "Ajutor social"
+  },
+  "68.02A.15.02": {
+    "value": 10029160.0,
+    "name": "Cantine de ajutor social"
+  },
+  "69.02A": {
+    "value": 387456800.0,
+    "name": "Partea a IV-a SERVICII SI DEZVOLTARE PUBLICA, LOCUINTE, MEDIU SI APE",
+    "subCategories": [
+      "70.02A",
+      "74.02A"
+    ]
+  },
+  "70.02A": {
+    "value": 212093120.0,
+    "name": "Locuinte, servicii si dezvoltare publica",
+    "subCategories": [
+      "70.02A.03",
+      "70.02A.05",
+      "70.02A.06",
+      "70.02A.50"
+    ]
+  },
+  "70.02A.03": {
+    "value": 56950880.0,
+    "name": "Locuinte",
+    "subCategories": [
+      "70.02A.03.01"
+    ]
+  },
+  "70.02A.03.01": {
+    "value": 56950880.0,
+    "name": "Dezvoltarea sistemului de locuinte"
+  },
+  "70.02A.05": {
+    "value": 5369050.0,
+    "name": "Alimentare cu apa si amenajari hidrotehnice",
+    "subCategories": [
+      "70.02A.05.01"
+    ]
+  },
+  "70.02A.05.01": {
+    "value": 5369050.0,
+    "name": "Alimentare cu apa"
+  },
+  "70.02A.06": {
+    "value": 31242610.0,
+    "name": "Iluminat public si electrificari rurale"
+  },
+  "70.02A.50": {
+    "value": 118530580.0,
+    "name": "Alte servicii in domeniul locuintei, serviciilor si dezvoltarii comunale"
+  },
+  "74.02A": {
+    "value": 175363680.0,
+    "name": "Protectia mediului",
+    "subCategories": [
+      "74.02A.03",
+      "74.02A.05",
+      "74.02A.06"
+    ]
+  },
+  "74.02A.03": {
+    "value": 4675540.0,
+    "name": "Reducerea si controlul poluarii"
+  },
+  "74.02A.05": {
+    "value": 169239240.0,
+    "name": "Salubritate si gestiunea deseurilor",
+    "subCategories": [
+      "74.02A.05.01",
+      "74.02A.05.02"
+    ]
+  },
+  "74.02A.05.01": {
+    "value": 154235480.0,
+    "name": "Salubritate"
+  },
+  "74.02A.05.02": {
+    "value": 15003760.0,
+    "name": "Colectarea, tratarea si distrugerea deseurilor"
+  },
+  "74.02A.06": {
+    "value": 1448900.0,
+    "name": "Canalizarea si tratarea apelor reziduale"
+  },
+  "79.02A": {
+    "value": 892874370.0,
+    "name": "Partea a V-a ACTIUNI ECONOMICE",
+    "subCategories": [
+      "81.02A",
+      "84.02A"
+    ]
+  },
+  "81.02A": {
+    "value": 235568000.0,
+    "name": "Combustibili si energie",
+    "subCategories": [
+      "81.02A.06"
+    ]
+  },
+  "81.02A.06": {
+    "value": 235568000.0,
+    "name": "Energie termica"
+  },
+  "84.02A": {
+    "value": 657306370.0,
+    "name": "Transporturi",
+    "subCategories": [
+      "84.02A.03"
+    ]
+  },
+  "84.02A.03": {
+    "value": 657306370.0,
+    "name": "Transport rutier",
+    "subCategories": [
+      "84.02A.03.01",
+      "84.02A.03.02",
+      "84.02A.03.03"
+    ]
+  },
+  "84.02A.03.01": {
+    "value": 67841240.0,
+    "name": "Drumuri si poduri"
+  },
+  "84.02A.03.02": {
+    "value": 478231460.0,
+    "name": "Transport in comun"
+  },
+  "84.02A.03.03": {
+    "value": 111233670.0,
+    "name": "Strazi"
+  },
+  "96.02A": {
+    "value": 0.0,
+    "name": "Partea a VII-a REZERVE, EXCEDENT/DEFICIT",
+    "subCategories": [
+      "97.02A",
+      "98.02A",
+      "99.02A"
+    ]
+  },
+  "97.02A": {
+    "value": 0.0,
+    "name": "REZERVE"
+  },
+  "98.02A": {
+    "value": 0.0,
+    "name": "EXCEDENT"
+  },
+  "99.02A": {
+    "value": 118081960.0,
+    "name": "DEFICIT"
+  },
+  "00.00": {
+    "name": "ALL ROOT ELEMENTS",
+    "subCategories": [
+      "00.01",
+      "01",
+      "45.02A",
+      "48.02A",
+      "50.02A",
+      "59.02A",
+      "64.02A",
+      "69.02A",
+      "70",
+      "79",
+      "79.02A",
+      "96.02A"
+    ]
+  }
+}

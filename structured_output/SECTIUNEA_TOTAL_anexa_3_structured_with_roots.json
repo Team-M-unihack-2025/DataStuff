@@ -1,0 +1,123 @@
+{
+  "00.01": {
+    "value": 23655110.0,
+    "name": "TOTAL VENITURI",
+    "subCategories": [
+      "00.02"
+    ]
+  },
+  "00.02": {
+    "value": 23655110.0,
+    "name": "I. VENITURI CURENTE",
+    "subCategories": [
+      "00.03"
+    ]
+  },
+  "00.03": {
+    "value": 23655110.0,
+    "name": "C. VENITURI NEFISCALE",
+    "subCategories": [
+      "36.00.01"
+    ]
+  },
+  "36.00.01": {
+    "value": 23655110.0,
+    "name": "C2. VANZARI DE BUNURI SI SERVICII"
+  },
+  "41.02B": {
+    "value": 23655110.0,
+    "name": "Alte operatiuni financiare",
+    "subCategories": [
+      "41.02B.03"
+    ]
+  },
+  "41.02B.03": {
+    "value": 23655110.0,
+    "name": "Sume aferente creditelor externe",
+    "subCategories": [
+      "41.02B.03.01"
+    ]
+  },
+  "41.02B.03.01": {
+    "value": 23655110.0,
+    "name": "Sume aferente creditelor externe"
+  },
+  "01": {
+    "value": 20669570.0,
+    "name": "CHELTUIELI CURENTE"
+  },
+  "58": {
+    "value": 10877570.0,
+    "name": "TITLUL X Proiecte cu finantare din fonduri externe nerambursabile aferente cadrului financiar 2014-2020"
+  },
+  "60": {
+    "value": 9792000.0,
+    "name": "TITLUL XII PROIECTE CU FINANTARE DIN SUMELE REPREZENTAND ASISTENTA FINANCIARA NERAMBURSABILA AFERENTA PNRR"
+  },
+  "70": {
+    "value": 2985540.0,
+    "name": "CHELTUIELI DE CAPITAL"
+  },
+  "71": {
+    "value": 2985540.0,
+    "name": "TITLUL XV ACTIVE NEFINANCIARE"
+  },
+  "79.02B": {
+    "value": 23655110.0,
+    "name": "Partea a V-a ACTIUNI ECONOMICE"
+  },
+  "84.02B": {
+    "value": 23655110.0,
+    "name": "Transporturi",
+    "subCategories": [
+      "84.02B.03"
+    ]
+  },
+  "84.02B.03": {
+    "value": 23655110.0,
+    "name": "Transport rutier",
+    "subCategories": [
+      "84.02B.03.02"
+    ]
+  },
+  "84.02B.03.02": {
+    "value": 23655110.0,
+    "name": "Transport in comun"
+  },
+  "96.02B": {
+    "value": 0.0,
+    "name": "Partea a VII-a REZERVE, EXCEDENT/DEFICIT",
+    "subCategories": [
+      "97.02B",
+      "98.02B",
+      "99.02B"
+    ]
+  },
+  "97.02B": {
+    "value": 0.0,
+    "name": "REZERVE"
+  },
+  "98.02B": {
+    "value": 0.0,
+    "name": "EXCEDENT"
+  },
+  "99.02B": {
+    "value": 0.0,
+    "name": "DEFICIT"
+  },
+  "00.00": {
+    "name": "ALL ROOT ELEMENTS",
+    "subCategories": [
+      "00.01",
+      "01",
+      "41.02B",
+      "58",
+      "60",
+      "70",
+      "71",
+      "79.02B",
+      "84.02B",
+      "96.02B"
+    ]
+  }
+}

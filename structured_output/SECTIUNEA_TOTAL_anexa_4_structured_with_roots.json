@@ -1,0 +1,119 @@
+{
+  "00.01": {
+    "value": 1664090.0,
+    "name": "TOTAL VENITURI",
+    "subCategories": [
+      "00.02",
+      "41.02C",
+      "56"
+    ]
+  },
+  "00.02": {
+    "value": 1664090.0,
+    "name": "I. VENITURI CURENTE",
+    "subCategories": [
+      "00.03"
+    ]
+  },
+  "00.03": {
+    "value": 1664090.0,
+    "name": "C. VENITURI NEFISCALE",
+    "subCategories": [
+      "36.00.01"
+    ]
+  },
+  "36.00.01": {
+    "value": 1664090.0,
+    "name": "C2. VANZARI DE BUNURI SI SERVICII",
+    "subCategories": []
+  },
+  "41.02C": {
+    "value": 1664090.0,
+    "name": "Alte operatiuni financiare",
+    "subCategories": [
+      "41.02C.02"
+    ]
+  },
+  "41.02C.02": {
+    "value": 1664090.0,
+    "name": "Sume aferente creditelor interne",
+    "subCategories": [
+      "41.02C.02.17"
+    ]
+  },
+  "41.02C.02.17": {
+    "value": 1664090.0,
+    "name": "Sume aferente imprumuturilor contractate de catre unitatile administrativ teritoriale conform OUG",
+    "subCategories": []
+  },
+  "01": {
+    "value": 1664090.0,
+    "name": "CHELTUIELI CURENTE",
+    "subCategories": [
+      "64.02C"
+    ]
+  },
+  "56": {
+    "value": 1664090.0,
+    "name": "Titlul VIII PROIECTE CU FINANTARE DIN FONDURI EXTERNE NERAMBURSABILE (FEN) POSTADERARE",
+    "subCategories": []
+  },
+  "64.02C": {
+    "value": 1664090.0,
+    "name": "Partea a III-a CHELTUIELI SOCIAL-CULTURALE",
+    "subCategories": [
+      "66.02C"
+    ]
+  },
+  "66.02C": {
+    "value": 1664090.0,
+    "name": "Sanatate",
+    "subCategories": [
+      "66.02C.06"
+    ]
+  },
+  "66.02C.06": {
+    "value": 1664090.0,
+    "name": "Servicii medicale in unitati sanitare cu paturi",
+    "subCategories": [
+      "66.02C.06.01"
+    ]
+  },
+  "66.02C.06.01": {
+    "value": 1664090.0,
+    "name": "Spitale generale",
+    "subCategories": []
+  },
+  "96.02C": {
+    "value": 0.0,
+    "name": "Partea a VII-a REZERVE, EXCEDENT/DEFICIT",
+    "subCategories": [
+      "97.02C",
+      "98.02C",
+      "99.02C"
+    ]
+  },
+  "97.02C": {
+    "value": 0.0,
+    "name": "REZERVE",
+    "subCategories": []
+  },
+  "98.02C": {
+    "value": 0.0,
+    "name": "EXCEDENT",
+    "subCategories": []
+  },
+  "99.02C": {
+    "value": 0.0,
+    "name": "DEFICIT",
+    "subCategories": []
+  },
+  "00.00": {
+    "name": "ALL ROOT ELEMENTS",
+    "subCategories": [
+      "00.01",
+      "01",
+      "96.02C"
+    ]
+  }
+}

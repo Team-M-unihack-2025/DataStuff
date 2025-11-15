@@ -1,0 +1,298 @@
+{
+  "00.00": {
+    "name": "ALL ROOT ELEMENTS",
+    "subCategories": [
+      "00.01",
+      "01",
+      "16.00.04",
+      "64.02G",
+      "69.02G",
+      "70",
+      "96.02G"
+    ]
+  },
+  "00.01": {
+    "value": 154266.02,
+    "name": "TOTAL VENITURI",
+    "subCategories": [
+      "00.02",
+      "42.00.02"
+    ]
+  },
+  "00.02": {
+    "value": 31616.56,
+    "name": "I. VENITURI CURENTE",
+    "subCategories": [
+      "16.00.03",
+      "42.00.02"
+    ]
+  },
+  "16.00.03": {
+    "value": 31616.56,
+    "name": "C. VENITURI NEFISCALE",
+    "subCategories": [
+      "30.02G",
+      "31.00.01",
+      "33.02G",
+      "35.02G",
+      "36.02G",
+      "37.02G"
+    ]
+  },
+  "16.00.04": {
+    "value": 370.0,
+    "name": "C1. VENITURI DIN PROPRIETATE",
+    "subCategories": []
+  },
+  "30.02G": {
+    "value": 370.0,
+    "name": "Venituri din proprietate",
+    "subCategories": [
+      "30.02G.05"
+    ]
+  },
+  "30.02G.05": {
+    "value": 370.0,
+    "name": "Venituri din concesiuni si inchirieri",
+    "subCategories": [
+      "30.02G.05.30"
+    ]
+  },
+  "30.02G.05.30": {
+    "value": 370.0,
+    "name": "Alte venituri din concesiuni si inchirieri de catre institutiile publice",
+    "subCategories": []
+  },
+  "31.00.01": {
+    "value": 31246.56,
+    "name": "C2. VANZARI DE BUNURI SI SERVICII",
+    "subCategories": []
+  },
+  "33.02G": {
+    "value": 27319.72,
+    "name": "Venituri din prestari de servicii si alte activitati",
+    "subCategories": [
+      "33.02G.08",
+      "33.02G.19",
+      "33.02G.50"
+    ]
+  },
+  "33.02G.08": {
+    "value": 20461.52,
+    "name": "Venituri din prestari de servicii",
+    "subCategories": []
+  },
+  "33.02G.19": {
+    "value": 3505.0,
+    "name": "Venituri din serbari si spectacole scolare, manifestari culturale, artistice si sportive",
+    "subCategories": []
+  },
+  "33.02G.50": {
+    "value": 3353.2,
+    "name": "Alte venituri din prestari de servicii si alte activitati",
+    "subCategories": []
+  },
+  "35.02G": {
+    "value": 2900.0,
+    "name": "Amenzi, penalitati si confiscari",
+    "subCategories": [
+      "35.02G.50"
+    ]
+  },
+  "35.02G.50": {
+    "value": 2900.0,
+    "name": "Alte amenzi, penalitati si confiscari",
+    "subCategories": []
+  },
+  "36.02G": {
+    "value": 849.53,
+    "name": "Diverse venituri",
+    "subCategories": [
+      "36.02G.50"
+    ]
+  },
+  "36.02G.50": {
+    "value": 849.53,
+    "name": "Alte venituri",
+    "subCategories": []
+  },
+  "37.02G": {
+    "value": 177.31,
+    "name": "Transferuri voluntare, altele decat subventiile",
+    "subCategories": [
+      "37.02G.01",
+      "37.02G.03",
+      "37.02G.04"
+    ]
+  },
+  "37.02G.01": {
+    "value": 177.31,
+    "name": "Donatii si sponsorizari",
+    "subCategories": []
+  },
+  "37.02G.03": {
+    "value": -3529.51,
+    "name": "Varsaminte din sectiunea de functionare pentru finantarea sectiunii de dezvoltare a bugetelui local",
+    "subCategories": []
+  },
+  "37.02G.04": {
+    "value": 3529.51,
+    "name": "Varsaminte din sectiunea de functionare",
+    "subCategories": []
+  },
+  "42.00.02": {
+    "value": 122649.46,
+    "name": "SUBVENTII DE LA ALTE NIVELE ALE ADMINISTRATIEI PUBLICE",
+    "subCategories": [
+      "43.02G"
+    ]
+  },
+  "43.02G": {
+    "value": 122649.46,
+    "name": "Subventii de la alte administratii",
+    "subCategories": [
+      "43.02G.09",
+      "43.02G.19"
+    ]
+  },
+  "43.02G.09": {
+    "value": 119070.31,
+    "name": "Subventii pentru institutii publice",
+    "subCategories": []
+  },
+  "43.02G.19": {
+    "value": 3579.15,
+    "name": "Subventii pentru institutii publice destinate sectiunii de devoltare",
+    "subCategories": []
+  },
+  "01": {
+    "value": 23801.44,
+    "name": "CHELTUIELI CURENTE",
+    "subCategories": [
+      "10",
+      "20",
+      "59"
+    ]
+  },
+  "10": {
+    "value": 9777.0,
+    "name": "TITLUL I CHELTUIELI DE PERSONAL",
+    "subCategories": []
+  },
+  "20": {
+    "value": 13924.44,
+    "name": "TITLUL II BUNURI SI SERVICII",
+    "subCategories": []
+  },
+  "59": {
+    "value": 100.0,
+    "name": "TITLUL XI ALTE CHELTUIELI",
+    "subCategories": []
+  },
+  "70": {
+    "value": 3873.04,
+    "name": "CHELTUIELI DE CAPITAL",
+    "subCategories": [
+      "71"
+    ]
+  },
+  "71": {
+    "value": 3873.04,
+    "name": "TITLUL XV ACTIVE NEFINANCIARE",
+    "subCategories": []
+  },
+  "64.02G": {
+    "value": 146612.42,
+    "name": "Partea a III-a CHELTUIELI SOCIAL-CULTURALE",
+    "subCategories": [
+      "67.02G"
+    ]
+  },
+  "67.02G": {
+    "value": 146612.42,
+    "name": "Cultura, recreere si religie",
+    "subCategories": [
+      "67.02G.03",
+      "67.02G.05",
+      "67.02G.50"
+    ]
+  },
+  "67.02G.03": {
+    "value": 80668.5,
+    "name": "Servicii culturale",
+    "subCategories": [
+      "67.02G.03.04",
+      "67.02G.03.06"
+    ]
+  },
+  "67.02G.03.04": {
+    "value": 62908.5,
+    "name": "Institutii publice de spectacole si conceserte",
+    "subCategories": []
+  },
+  "67.02G.03.06": {
+    "value": 17760.0,
+    "name": "Case de cultura",
+    "subCategories": []
+  },
+  "67.02G.05": {
+    "value": 28408.92,
+    "name": "Servicii recreative si sportive",
+    "subCategories": [
+      "67.02G.05.01"
+    ]
+  },
+  "67.02G.05.01": {
+    "value": 28408.92,
+    "name": "Sport",
+    "subCategories": []
+  },
+  "67.02G.50": {
+    "value": 37535.0,
+    "name": "Alte servicii în domeniile culturii, recreerii si religiei",
+    "subCategories": []
+  },
+  "69.02G": {
+    "value": 27674.48,
+    "name": "Partea a IV-a SERVICII SI DEZVOLTARE PUBLICA, LOCUINTE, MEDIU SI APE",
+    "subCategories": [
+      "70.02G"
+    ]
+  },
+  "70.02G": {
+    "value": 27674.48,
+    "name": "Locuinte, servicii si dezvoltare publica",
+    "subCategories": [
+      "70.02G.50"
+    ]
+  },
+  "70.02G.50": {
+    "value": 27674.48,
+    "name": "Alte servicii in domeniul locuintei, serviciilor si dezvoltarii comunale",
+    "subCategories": []
+  },
+  "96.02G": {
+    "value": 0.0,
+    "name": "Partea a VII-a REZERVE, EXCEDENT/DEFICIT",
+    "subCategories": [
+      "97.02G",
+      "98.02G",
+      "99.02G"
+    ]
+  },
+  "97.02G": {
+    "value": 0.0,
+    "name": "REZERVE",
+    "subCategories": []
+  },
+  "98.02G": {
+    "value": 0.0,
+    "name": "EXCEDENT",
+    "subCategories": []
+  },
+  "99.02G": {
+    "value": 20020.88,
+    "name": "DEFICIT",
+    "subCategories": []
+  }
+}
