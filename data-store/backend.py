@@ -102,81 +102,6 @@ def get_category(budget_id: str, category_code: str):
         return jsonify({'error': str(e)}), 500
 
 
-
-@app.route('/api/budget/<path:budget_id>/hierarchy', methods=['GET'])
-def get_hierarchy(budget_id: str):
-    """Get full hierarchy starting from a category"""
-    try:
-        start_key = request.args.get('start', '00.00')
-        hierarchy = traverse_hierarchy(client, start_key, PROGRAM_ID)
-
-        # Convert to JSON-serializable format
-        result = [
-            {'key': key, 'data': data}
-            for key, data in hierarchy
-        ]
-
-        return jsonify({
-            'startKey': start_key,
-            'totalNodes': len(result),
-            'hierarchy': result
-        })
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-
-
-@app.route('/api/budget/<path:budget_id>/search', methods=['GET'])
-def search_categories(budget_id: str):
-    """Search categories by name or code"""
-    try:
-        query = request.args.get('q', '').lower()
-        if not query:
-            return jsonify({'results': []})
-
-        # Get all nodes from hierarchy
-        hierarchy = traverse_hierarchy(client, "00.00", PROGRAM_ID)
-
-        # Filter by query
-        results = []
-        for key, data in hierarchy:
-            name = data.get('name', '').lower()
-            if query in key.lower() or query in name:
-                results.append({
-                    'key': key,
-                    'name': data.get('name', ''),
-                    'value': data.get('value', 0)
-                })
-
-        return jsonify({'results': results[:20]})  # Limit to 20 results
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-
-
-@app.route('/api/budget/<path:budget_id>/compare', methods=['POST'])
-def compare_categories(budget_id: str):
-    """Compare multiple categories"""
-    try:
-        category_codes = request.json.get('categories', [])
-        if not category_codes:
-            return jsonify({'error': 'No categories provided'}), 400
-
-        comparison = []
-        for code in category_codes:
-            result = read_node_from_chain(client, code, PROGRAM_ID)
-            if result:
-                key, data = result
-                comparison.append({
-                    'key': key,
-                    'name': data.get('name', ''),
-                    'value': data.get('value', 0),
-                    'subCategories': data.get('subCategories', [])
-                })
-
-        return jsonify({'comparison': comparison})
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-
-
 @app.route('/api/health', methods=['GET'])
 def health_check():
     """Health check endpoint"""
@@ -187,12 +112,21 @@ def health_check():
         # Test program exists
         program_info = client.get_account_info(PROGRAM_ID)
 
+        # Extract version info safely
+        rpc_version = None
+        if hasattr(version, 'value'):
+            version_obj = version.value
+            if hasattr(version_obj, 'solana_core'):
+                rpc_version = version_obj.solana_core
+            elif hasattr(version_obj, '__dict__'):
+                rpc_version = str(version_obj)
+
         return jsonify({
             'status': 'healthy',
             'rpc': RPC_URL,
             'program': str(PROGRAM_ID),
             'programExists': program_info.value is not None,
-            'rpcVersion': version.value if hasattr(version, 'value') else str(version)
+            'rpcVersion': rpc_version
         })
     except Exception as e:
         return jsonify({
@@ -207,16 +141,13 @@ def get_stats():
     try:
         mapping = load_budget_mapping()
 
-        total_nodes = 0
         total_budgets = len(mapping)
 
         for pda_map_file in mapping.values():
             pda_map = load_pda_map(pda_map_file)
-            total_nodes += len(pda_map)
 
         return jsonify({
             'totalBudgets': total_budgets,
-            'totalNodes': total_nodes,
             'rpc': RPC_URL,
             'program': str(PROGRAM_ID)
         })
