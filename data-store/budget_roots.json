@@ -1,0 +1,24 @@
+{
+  "SECTIUNEA_TOTAL_anexa_2_structured_with_roots.json": {
+    "pda_map_file": "pda_map_SECTIUNEA_TOTAL_anexa_2_structured_with_roots.json",
+    "total_nodes": 197,
+    "root": {
+      "name": "ALL ROOT ELEMENTS",
+      "value": 0,
+      "subCategories": [
+        "00.01",
+        "01",
+        "45.02A",
+        "48.02A",
+        "50.02A",
+        "59.02A",
+        "64.02A",
+        "69.02A",
+        "70",
+        "79",
+        "79.02A",
+        "96.02A"
+      ]
+    }
+  }
+}
