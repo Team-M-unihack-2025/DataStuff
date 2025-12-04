@@ -156,8 +156,6 @@ def traverse_hierarchy(client: Client, start_key: str, program_id: Pubkey) -> Li
 
     return results
 
-    return results
-
 def print_node_tree(client: Client, start_key: str, program_id: Pubkey, indent: int = 0):
     data = read_node_from_chain(client, start_key, program_id)
     if not data:
