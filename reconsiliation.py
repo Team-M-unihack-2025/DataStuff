@@ -21,8 +21,13 @@ def get_total_from_json(file_path: str) -> float:
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
-        # Sum the 'value' from each top-level entry in the JSON object
-        total_sum = sum(item.get('value', 0) for item in data.values() if isinstance(item, dict))
+        # Sum the 'value' from each top-level entry in the JSON object more efficiently
+        # Use generator expression to avoid creating intermediate list
+        total_sum = sum(
+            item.get('value', 0) 
+            for item in data.values() 
+            if isinstance(item, dict) and 'value' in item
+        )
         return total_sum
     except json.JSONDecodeError:
         print(f"Error: Could not decode JSON from '{file_path}'.")

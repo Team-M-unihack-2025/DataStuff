@@ -32,8 +32,14 @@ def load_json_file(file_path):
         return None
 
 
-def reconcile_and_save_data(client, data, model_name, output_path):
+def reconcile_and_save_data(client, data, model_name, output_path, force=False):
     """Sends data to an OpenRouter model for restructuring and saves the JSON output."""
+    # Check if output already exists to avoid redundant API calls
+    if os.path.exists(output_path) and not force:
+        print(f"⚠️  Output file '{output_path}' already exists. Skipping API call.")
+        print(f"    Use --force flag to regenerate.")
+        return
+    
     data_string = json.dumps(data, indent=2, ensure_ascii=False)
     # Updated prompt with more detailed instructions for the model
     prompt = f"""
@@ -137,6 +143,11 @@ def main():
         default='minimax/minimax-m2',
         help="The name of the OpenRouter model to use."
     )
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help="Force regeneration even if output files exist."
+    )
     args = parser.parse_args()
 
     # Ensure output directory exists
@@ -158,15 +169,31 @@ def main():
 
     client = get_openrouter_client()
 
+    processed_count = 0
+    skipped_count = 0
+
     for input_path in files_to_process:
         print(f"Processing file: '{input_path}'")
+        
+        base_filename = os.path.basename(input_path)
+        output_filename = f"{os.path.splitext(base_filename)[0]}_structured.json"
+        output_path = os.path.join(args.output_dir, output_filename)
+        
+        # Skip if exists and not forcing
+        if os.path.exists(output_path) and not args.force:
+            print(f"⚠️  Skipping '{base_filename}' - output already exists")
+            skipped_count += 1
+            continue
+        
         data = load_json_file(input_path)
         if data:
-            base_filename = os.path.basename(input_path)
-            output_filename = f"{os.path.splitext(base_filename)[0]}_structured.json"
-            output_path = os.path.join(args.output_dir, output_filename)
-
-            reconcile_and_save_data(client, data, args.model, output_path)
+            reconcile_and_save_data(client, data, args.model, output_path, args.force)
+            processed_count += 1
+    
+    print(f"\n{'='*50}")
+    print(f"Processed: {processed_count} files")
+    print(f"Skipped: {skipped_count} files")
+    print(f"{'='*50}")
 
 
 if __name__ == "__main__":

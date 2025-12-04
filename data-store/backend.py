@@ -3,6 +3,8 @@ from flask_cors import CORS
 from typing import Dict, List, Optional
 import json
 from pathlib import Path
+from functools import lru_cache
+from datetime import datetime, timedelta
 
 from solana.rpc.api import Client
 from solders.pubkey import Pubkey
@@ -14,6 +16,21 @@ from solWriter import load_program_id
 app = Flask(__name__)
 CORS(app)
 
+# Simple in-memory cache with TTL and size limit
+_cache = {}
+_cache_ttl = {}
+CACHE_TTL_SECONDS = 300  # 5 minutes
+CACHE_MAX_SIZE = 1000  # Maximum number of cached items
+
+
+def _cleanup_expired_cache():
+    """Remove expired entries from cache"""
+    now = datetime.now()
+    expired_keys = [k for k, ttl in _cache_ttl.items() if now >= ttl]
+    for k in expired_keys:
+        _cache.pop(k, None)
+        _cache_ttl.pop(k, None)
+
 # Configuration
 RPC_URL = "https://api.devnet.solana.com"
 PROGRAM_ID = load_program_id()
@@ -24,8 +41,43 @@ MAPPING_FILE = Path("budget_accounts.json")
 PDA_MAP_DIR = Path("..")
 
 
+def _is_cache_valid(key: str) -> bool:
+    """Check if cache entry is still valid"""
+    if key not in _cache or key not in _cache_ttl:
+        return False
+    return datetime.now() < _cache_ttl[key]
+
+
+def _set_cache(key: str, value):
+    """Set cache with TTL and enforce size limit"""
+    # Cleanup expired entries first
+    _cleanup_expired_cache()
+    
+    # Enforce size limit (remove oldest entries if needed)
+    if len(_cache) >= CACHE_MAX_SIZE:
+        # Remove oldest entry (first one added, simple FIFO)
+        oldest_key = next(iter(_cache))
+        _cache.pop(oldest_key, None)
+        _cache_ttl.pop(oldest_key, None)
+    
+    _cache[key] = value
+    _cache_ttl[key] = datetime.now() + timedelta(seconds=CACHE_TTL_SECONDS)
+
+
+def _get_cache(key: str):
+    """Get from cache if valid"""
+    if _is_cache_valid(key):
+        return _cache[key]
+    return None
+
+
 def get_node_with_children(category_code: str) -> Optional[Dict]:
     """Helper to get a node with its immediate children in nested format"""
+    cache_key = f"node_{category_code}"
+    cached = _get_cache(cache_key)
+    if cached is not None:
+        return cached
+    
     result = read_node_from_chain(client, category_code, PROGRAM_ID)
 
     if not result:
@@ -58,9 +110,11 @@ def get_node_with_children(category_code: str) -> Optional[Dict]:
     if data.get('value') is not None:
         response['value'] = data.get('value')
 
+    _set_cache(cache_key, response)
     return response
 
 
+@lru_cache(maxsize=128)
 def load_budget_mapping() -> Dict[str, str]:
     """Load mapping of budget files to their PDA maps"""
     if not MAPPING_FILE.exists():
@@ -69,6 +123,7 @@ def load_budget_mapping() -> Dict[str, str]:
         return json.load(f)
 
 
+@lru_cache(maxsize=128)
 def load_pda_map(pda_map_file: str) -> Dict[str, str]:
     """Load PDA mapping for a specific budget file"""
     pda_path = PDA_MAP_DIR / pda_map_file
