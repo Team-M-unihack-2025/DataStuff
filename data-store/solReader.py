@@ -3,7 +3,7 @@ import base64
 import hashlib
 import json
 import os
-from typing import Dict, Tuple, Optional, List, Any
+from typing import Dict, Tuple, Optional, List, Any, Set
 
 from solana.rpc.api import Client
 from solders.pubkey import Pubkey

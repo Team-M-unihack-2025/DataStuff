@@ -1,6 +1,7 @@
 import json
 import sys
 import os
+import argparse
 from typing import Dict, List, Set
 
 
@@ -68,7 +69,6 @@ def process_anexa(number: int, input_dir: str = 'structured_output', output_dir:
 
 def main():
     """Process all anexa files or a specific one from command line."""
-    import argparse
     
     parser = argparse.ArgumentParser(
         description='Process budget anexa files and add root elements.'
