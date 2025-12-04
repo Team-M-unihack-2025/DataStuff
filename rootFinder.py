@@ -68,16 +68,36 @@ def process_anexa(number: int, input_dir: str = 'structured_output', output_dir:
 
 def main():
     """Process all anexa files or a specific one from command line."""
-    # Allow specifying anexa number(s) from command line
-    if len(sys.argv) > 1:
-        numbers = [int(arg) for arg in sys.argv[1:]]
-    else:
-        # Default to processing anexa 2-7
-        numbers = list(range(2, 8))
+    import argparse
+    
+    parser = argparse.ArgumentParser(
+        description='Process budget anexa files and add root elements.'
+    )
+    parser.add_argument(
+        'numbers',
+        nargs='*',
+        type=int,
+        help='Specific anexa numbers to process (default: 2-7)'
+    )
+    parser.add_argument(
+        '--input-dir',
+        default='structured_output',
+        help='Input directory containing anexa files'
+    )
+    parser.add_argument(
+        '--output-dir',
+        default='structured_output',
+        help='Output directory for processed files'
+    )
+    
+    args = parser.parse_args()
+    
+    # Use provided numbers or default to 2-7
+    numbers = args.numbers if args.numbers else list(range(2, 8))
     
     success_count = 0
     for number in numbers:
-        if process_anexa(number):
+        if process_anexa(number, args.input_dir, args.output_dir):
             success_count += 1
     
     print(f"\n{'='*50}")
