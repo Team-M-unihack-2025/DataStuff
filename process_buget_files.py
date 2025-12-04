@@ -127,7 +127,7 @@ def process_excel_file(excel_path, output_dir='output_json'):
 
         # Group rows by their section using forward fill for better performance
         # This is much faster than iterating through rows
-        df['SECTIUNEA'] = df['SECTIUNEA_EXTRACTED'].fillna(method='ffill')
+        df['SECTIUNEA'] = df['SECTIUNEA_EXTRACTED'].ffill()
 
         # Get unique sections, filtering out None/empty values
         sections = df['SECTIUNEA'].unique()
@@ -159,8 +159,8 @@ def process_excel_file(excel_path, output_dir='output_json'):
             
             # Prepare columns efficiently
             valid_df['indicator_clean'] = valid_df['Indicator bugetar'].astype(str).str.strip()
-            valid_df['value_clean'] = valid_df[total_col].apply(lambda x: float(x) if pd.notna(x) else 0.0)
-            valid_df['name_clean'] = valid_df['Denumirea indicatorului bugetar'].apply(lambda x: str(x).strip() if pd.notna(x) else "")
+            valid_df['value_clean'] = pd.to_numeric(valid_df[total_col], errors='coerce').fillna(0.0)
+            valid_df['name_clean'] = valid_df['Denumirea indicatorului bugetar'].astype(str).str.strip().fillna('')
             
             # Build result dictionary
             for _, row in valid_df[['indicator_clean', 'value_clean', 'name_clean']].iterrows():
