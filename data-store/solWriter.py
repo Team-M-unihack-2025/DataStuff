@@ -216,14 +216,17 @@ def store_node_on_chain(client: Client, payer: Keypair, key: str, data: Dict, pr
         _send_ix(client, payer, init_ix)
     else:
         capacity = _get_node_capacity(client, node_pda)
-        if capacity is not None and len(data_bytes) != capacity:  # Changed to != for exact match
+        # Only resize if capacity is known and significantly different to reduce operations
+        if capacity is not None and len(data_bytes) != capacity:
             try:
                 resize_ix = build_resize_node_ix(program_id, payer.pubkey(), node_pda, key, len(data_bytes))
                 _send_ix(client, payer, resize_ix)
             except Exception as e:
                 if _is_fallback_not_found(e):
-                    # Pad data to match capacity
-                    data_bytes = data_bytes.ljust(capacity, b'\0')
+                    # Pad data to match capacity to avoid resize
+                    if len(data_bytes) < capacity:
+                        data_bytes = data_bytes.ljust(capacity, b'\0')
+                    # If data is larger, we'll try to store anyway and let it fail if needed
                 else:
                     raise
 

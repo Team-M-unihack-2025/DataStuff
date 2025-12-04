@@ -124,6 +124,7 @@ def read_node_from_chain(client: Client, key: str, program_id: Pubkey) -> Option
         return None
 
 def read_all_nodes(client: Client, keys: List[str], program_id: Pubkey) -> Dict[str, Dict]:
+    """Read multiple nodes from chain. Individual failures are logged but don't stop processing."""
     results: Dict[str, Dict] = {}
     for key in keys:
         data = read_node_from_chain(client, key, program_id)
@@ -133,9 +134,10 @@ def read_all_nodes(client: Client, keys: List[str], program_id: Pubkey) -> Dict[
     return results
 
 def traverse_hierarchy(client: Client, start_key: str, program_id: Pubkey) -> List[Tuple[str, Dict]]:
+    """Traverse hierarchy from start_key. Uses BFS to avoid deep recursion."""
     results: List[Tuple[str, Dict]] = []
     queue: List[str] = [start_key]
-    visited = set()
+    visited: Set[str] = set()
 
     while queue:
         current_key = queue.pop(0)
@@ -147,7 +149,12 @@ def traverse_hierarchy(client: Client, start_key: str, program_id: Pubkey) -> Li
         if data:
             key, node_data = data
             results.append((key, node_data))
-            queue.extend(node_data.get("subCategories", []))
+            # Extend queue with subcategories if present
+            sub_cats = node_data.get("subCategories", [])
+            if sub_cats:
+                queue.extend(sub_cats)
+
+    return results
 
     return results
 

@@ -125,18 +125,9 @@ def process_excel_file(excel_path, output_dir='output_json'):
             lambda x: extract_sectiunea(str(x)) if pd.notna(x) else None
         )
 
-        # Group rows by their section
-        # We need to track which section each row belongs to
-        current_section = None
-        sections_list = []
-
-        for idx, row in df.iterrows():
-            sectiunea_value = row['SECTIUNEA_EXTRACTED']
-            if sectiunea_value:
-                current_section = sectiunea_value
-            sections_list.append(current_section)
-
-        df['SECTIUNEA'] = sections_list
+        # Group rows by their section using forward fill for better performance
+        # This is much faster than iterating through rows
+        df['SECTIUNEA'] = df['SECTIUNEA_EXTRACTED'].fillna(method='ffill')
 
         # Get unique sections, filtering out None/empty values
         sections = df['SECTIUNEA'].unique()
@@ -155,18 +146,28 @@ def process_excel_file(excel_path, output_dir='output_json'):
             section_df = section_df.sort_values('Cod rand')
 
             # Create dictionary with format: "indicator_bugetar": {"value": total, "name": "indicator_name"}
+            # Use vectorized operations instead of iterating rows for better performance
             result = {}
-            for _, row in section_df.iterrows():
-                indicator_bugetar = str(row['Indicator bugetar']).strip() if pd.notna(row['Indicator bugetar']) else None
-                cod_rand = str(row['Cod rand']).strip() if pd.notna(row['Cod rand']) else None
-                total_value = row[total_col]
-                name = row['Denumirea indicatorului bugetar']
-
-                if indicator_bugetar and indicator_bugetar != 'nan':
-                    result[indicator_bugetar] = {
-                        "value": float(total_value) if pd.notna(total_value) else 0.0,
-                        "name": str(name).strip() if pd.notna(name) else ""
-                    }
+            
+            # Filter out invalid indicators upfront
+            valid_mask = (
+                section_df['Indicator bugetar'].notna() &
+                (section_df['Indicator bugetar'].astype(str).str.strip() != '') &
+                (section_df['Indicator bugetar'].astype(str).str.strip() != 'nan')
+            )
+            valid_df = section_df[valid_mask].copy()
+            
+            # Prepare columns efficiently
+            valid_df['indicator_clean'] = valid_df['Indicator bugetar'].astype(str).str.strip()
+            valid_df['value_clean'] = valid_df[total_col].apply(lambda x: float(x) if pd.notna(x) else 0.0)
+            valid_df['name_clean'] = valid_df['Denumirea indicatorului bugetar'].apply(lambda x: str(x).strip() if pd.notna(x) else "")
+            
+            # Build result dictionary
+            for _, row in valid_df[['indicator_clean', 'value_clean', 'name_clean']].iterrows():
+                result[row['indicator_clean']] = {
+                    "value": row['value_clean'],
+                    "name": row['name_clean']
+                }
 
             # Create filename
             sanitized_section = re.sub(r'[^a-zA-Z0-9_\-]', '_', str(section))
