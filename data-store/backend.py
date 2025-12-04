@@ -16,10 +16,20 @@ from solWriter import load_program_id
 app = Flask(__name__)
 CORS(app)
 
-# Simple in-memory cache with TTL
+# Simple in-memory cache with TTL and size limit
 _cache = {}
 _cache_ttl = {}
 CACHE_TTL_SECONDS = 300  # 5 minutes
+CACHE_MAX_SIZE = 1000  # Maximum number of cached items
+
+
+def _cleanup_expired_cache():
+    """Remove expired entries from cache"""
+    now = datetime.now()
+    expired_keys = [k for k, ttl in _cache_ttl.items() if now >= ttl]
+    for k in expired_keys:
+        _cache.pop(k, None)
+        _cache_ttl.pop(k, None)
 
 # Configuration
 RPC_URL = "https://api.devnet.solana.com"
@@ -39,7 +49,17 @@ def _is_cache_valid(key: str) -> bool:
 
 
 def _set_cache(key: str, value):
-    """Set cache with TTL"""
+    """Set cache with TTL and enforce size limit"""
+    # Cleanup expired entries first
+    _cleanup_expired_cache()
+    
+    # Enforce size limit (remove oldest entries if needed)
+    if len(_cache) >= CACHE_MAX_SIZE:
+        # Remove oldest entry (first one added, simple FIFO)
+        oldest_key = next(iter(_cache))
+        _cache.pop(oldest_key, None)
+        _cache_ttl.pop(oldest_key, None)
+    
     _cache[key] = value
     _cache_ttl[key] = datetime.now() + timedelta(seconds=CACHE_TTL_SECONDS)
 

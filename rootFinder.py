@@ -40,7 +40,7 @@ def process_anexa(number: int, input_dir: str = 'structured_output', output_dir:
                 "value": sum(
                     budget_data[root].get('value', 0) 
                     for root in roots 
-                    if root in budget_data and isinstance(budget_data[root], dict)
+                    if isinstance(budget_data.get(root), dict)
                 ),
                 "name": "ALL ROOT ELEMENTS",
                 "subCategories": sorted(roots)
